@@ -1,0 +1,15 @@
+# Running Prettier on staged files
+'**/*.{ts,tsx,jsx,js,json,md,yaml,yml,cts,cjs,toml,html}':
+  - prettier --write
+'*.{ts,tsx,jsx,js,json,md,yaml,yml,cts,cjs,toml,html}':
+  - prettier --write
+
+# Running ESLint on staged files
+'**/*.{ts,tsx,jsx,js}':
+  - eslint  --fix
+'*.{ts,tsx,jsx,js}':
+  - eslint --fix
+
+# Running tests
+# '**/*.test.ts':
+#  - jest
