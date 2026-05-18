@@ -29,6 +29,7 @@ export default function RootLayout({
 		<html
 			lang="en"
 			className={`${inter.variable} ${dmSerifDisplay.variable} antialiased`}
+			suppressHydrationWarning
 		>
 			<body className={`flex min-h-full flex-col`}>{children}</body>
 		</html>
