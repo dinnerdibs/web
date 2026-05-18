@@ -1,10 +1,17 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, DM_Serif_Display } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({
 	subsets: ['latin'],
 	weight: 'variable',
+	variable: '--font-body',
+});
+
+const dmSerifDisplay = DM_Serif_Display({
+	subsets: ['latin'],
+	weight: '400',
+	variable: '--font-heading',
 });
 
 export const metadata: Metadata = {
@@ -21,11 +28,9 @@ export default function RootLayout({
 	return (
 		<html
 			lang="en"
-			className={`antialiased`}
+			className={`${inter.variable} ${dmSerifDisplay.variable} antialiased`}
 		>
-			<body className={`${inter.className} min-h-full flex flex-col`}>
-				{children}
-			</body>
+			<body className={`flex min-h-full flex-col`}>{children}</body>
 		</html>
 	);
 }
