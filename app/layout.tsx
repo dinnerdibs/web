@@ -31,7 +31,7 @@ export default function RootLayout({
 			className={`${inter.variable} ${dmSerifDisplay.variable} antialiased`}
 			suppressHydrationWarning
 		>
-			<body className={`flex min-h-full flex-col`}>{children}</body>
+			<body>{children}</body>
 		</html>
 	);
 }
