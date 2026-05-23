@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, DM_Serif_Display } from 'next/font/google';
 import './globals.css';
+import MainContainer from '@/layouts/main-container';
 
 const inter = Inter({
 	subsets: ['latin'],
@@ -31,7 +32,9 @@ export default function RootLayout({
 			className={`${inter.variable} ${dmSerifDisplay.variable} antialiased`}
 			suppressHydrationWarning
 		>
-			<body>{children}</body>
+			<body>
+				<MainContainer>{children}</MainContainer>
+			</body>
 		</html>
 	);
 }
