@@ -48,7 +48,7 @@ export default function SignUpPage() {
 				className="relative flex flex-col justify-between overflow-hidden p-8 lg:min-h-screen lg:w-[48%] lg:p-12"
 				style={{
 					background:
-						'linear-gradient(135deg, #f9d5c2 0%, #e8835a 30%, #c1440e 65%, #581905 100%)',
+						'linear-gradient(135deg, #f5b49a 0%, #e8835a 30%, #c1440e 65%, #581905 100%)',
 				}}
 			>
 				<div className="relative z-10 flex items-center justify-between">
