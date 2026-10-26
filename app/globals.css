@@ -1,6 +1,6 @@
 @import 'tailwindcss';
-@import 'tw-animate-css';
-@import 'shadcn/tailwind.css';
+@import '../node_modules/tw-animate-css/dist/tw-animate.css';
+@import '../node_modules/shadcn/dist/tailwind.css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -209,6 +209,15 @@
 @layer base {
 	* {
 		@apply border-border outline-ring/50;
+	}
+	::selection {
+		background-color: var(--color-primary-700);
+		color: var(--color-primary-50);
+	}
+	input::selection,
+	textarea::selection {
+		background-color: var(--color-primary-700);
+		color: var(--color-primary-50);
 	}
 	body {
 		@apply bg-background text-foreground;
