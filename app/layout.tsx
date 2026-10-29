@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, DM_Serif_Display } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 
 const inter = Inter({
@@ -34,6 +35,7 @@ export default function RootLayout({
 		>
 			<body className="bg-background-base text-content-secondary min-h-screen antialiased">
 				{children}
+				<Analytics />
 			</body>
 		</html>
 	);
