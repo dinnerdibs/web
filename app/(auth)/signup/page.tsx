@@ -233,7 +233,7 @@ export default function SignUpPage() {
 						<p className="text-content-secondary text-sm">
 							Have an account?{' '}
 							<Link
-								href="#"
+								href="/login"
 								className="text-primary hover:text-primary-600 font-semibold underline underline-offset-2"
 							>
 								Log in to your DinnerDibs account
