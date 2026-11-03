@@ -8,12 +8,14 @@ export default function PasswordInput({
 	placeholder,
 	value,
 	onChange,
+	autoComplete = 'new-password',
 }: {
 	id: string;
 	label: string;
 	placeholder: string;
 	value: string;
 	onChange: (v: string) => void;
+	autoComplete?: 'new-password' | 'current-password';
 }) {
 	const [visible, setVisible] = useState(false);
 
@@ -30,7 +32,7 @@ export default function PasswordInput({
 					id={id}
 					type={visible ? 'text' : 'password'}
 					placeholder={placeholder}
-					autoComplete={id === 'password' ? 'new-password' : 'new-password'}
+					autoComplete={autoComplete}
 					value={value}
 					onChange={(e) => onChange(e.target.value)}
 					className="border-border-color text-content-tertiary placeholder:text-content-primary focus:border-primary focus:ring-primary/20 w-full rounded-xl border bg-white px-4 py-3 pr-11 text-sm transition outline-none focus:ring-2"

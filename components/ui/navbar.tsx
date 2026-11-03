@@ -35,7 +35,7 @@ export default function Navbar() {
 
 	const rightLinks = [
 		{ label: 'Sign Up', href: '/signup' },
-		{ label: 'Login', href: '#' },
+		{ label: 'Login', href: '/login' },
 		{ label: 'Support', href: '#' },
 	];
 
